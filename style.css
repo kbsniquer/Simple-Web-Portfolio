@@ -23,6 +23,10 @@ a.nav-link,
   text-transform: uppercase;
 }
 
+nav {
+  background-color: #212529;
+}
+
 nav a {
   color: white;
   margin: 0 0.75em 0 0.75em;
@@ -50,14 +54,12 @@ footer p {
 .nav-item a:hover {
   color: white;
   border-bottom: 2px solid white;
-  transition: .5s;
 }
 
 .navbar-brand {
   color: #fff;
   font-size: 24pt;
 }
-
 
 .navbar-brand:hover {
   text-decoration: none;
@@ -74,14 +76,59 @@ footer p {
 
 /* --------------------------- */
 
+.landing {
+  padding: 0;
+  background-color: #212529;
+}
+
+.landing_heading,
+.landing_text {
+  color: white;
+}
+
+.landing_heading {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-size: 7rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.landing_text {
+  padding-top: 0.75rem;
+  animation: fadeInAnimation ease 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fa-angle-double-down {
+  color: white;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* ----- About Section ----- */
 .about {
   padding: 4rem;
-  margin-top: 60px;
 }
 
-.about,
-nav {
+.about {
   background-color: #3a3738;
 }
 
@@ -90,14 +137,15 @@ nav {
 }
 
 .about-heading {
-  color: orange;
-  font-family: 'Shippori Mincho', serif;
+  color: #efa16b;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
 }
 
 .about-text {
   color: white;
   line-height: 1.7em;
-  font-size: 14pt;
+  font-size: 1rem;
 }
 
 /* --------------------------- */
@@ -116,19 +164,15 @@ nav {
 }
 
 .header-container {
-  padding: 2em;
+  padding: 3rem 2rem 3rem 2rem;
 }
 
 /* --------------------------- */
 
 /* ----- Projects Section ----- */
 
-.project-block:last-of-type {
-  padding-bottom: 2em;
-}
-
-.project-pic {
-  box-shadow: -3px 5px 32px 5px rgba(158,158,158,0.12);
+.project-block {
+  padding-bottom: 4rem;
 }
 
 .see-more {
@@ -142,6 +186,8 @@ nav {
 .see-more:hover {
   text-decoration: none;
   color: black;
+  padding-bottom: 0.25rem;
+  transition: 0.25s ease;
 }
 
 /* --------------------------- */
@@ -173,9 +219,9 @@ nav {
 }
 
 .title {
-  font-size: 16pt;
+  font-size: 1.75rem;
   font-weight: bold;
-  font-family: 'Shippori Mincho', serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .dates {
@@ -205,8 +251,8 @@ nav {
 
 .contact-heading p:first-child {
   font-size: 40pt;
-  color: orange;
-  font-family: 'Shippori Mincho', serif;
+  color: #efa16b;
+  font-family: "Oswald", sans-serif;
 }
 
 .contact-information {
@@ -294,7 +340,7 @@ nav {
   .project-desc h2 {
     font-size: 22pt;
     padding-top: 3rem;
-    font-family: 'Shippori Mincho', serif;
+    font-family: "Oswald", sans-serif;
   }
 
   .job-description ul li {
@@ -318,6 +364,10 @@ nav {
 }
 
 @media only screen and (max-width: 815px) {
+  .landing_heading {
+    font-size: 5rem;
+  }
+
   .employment-exp {
     padding: 1rem;
   }
@@ -328,8 +378,17 @@ nav {
 }
 
 @media only screen and (max-width: 555px) {
+  .landing_heading {
+    font-size: 4rem;
+  }
+
+  .landing_text {
+    font-size: 1rem;
+    padding: 1rem 3.75rem 0 3.75rem;
+  }
+
   .about {
-    padding: 0.75rem;
+    padding: 1rem;
   }
 
   .about-heading {

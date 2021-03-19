@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -13,9 +16,9 @@
     ></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
     <!-- MDB icon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
     <script src="./js/jquery-2.1.3.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/72b445c56b.js"></script>
@@ -25,7 +28,9 @@
   <body>
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#">Karen Sniquer</a>
+      <a class="navbar-brand" href="#"
+        ><img src="./images/logo.png" alt="Karen Sniquer logo"
+      /></a>
       <button
         class="navbar-toggler navbar-dark"
         type="button"
@@ -41,16 +46,31 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#projects" onclick="scrollToTargetAdjusted('experience')">Projects</a>
+            <a
+              class="nav-link"
+              href="#projects"
+              onclick="scrollToTargetAdjusted('experience')"
+              >Projects</a
+            >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#experience" onclick="scrollToTargetAdjusted('education')">Experience</a>
+            <a
+              class="nav-link"
+              href="#experience"
+              onclick="scrollToTargetAdjusted('education')"
+              >Experience</a
+            >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#education" onclick="scrollToTargetAdjusted('contact')">Education</a>
+            <a
+              class="nav-link"
+              href="#education"
+              onclick="scrollToTargetAdjusted('contact')"
+              >Education</a
+            >
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact">Contact</a>
@@ -59,26 +79,46 @@
       </div>
     </nav>
 
+    <!-- Landing Section -->
+    <section
+      id="landing"
+      class="landing min-vh-100 text-center container-fluid d-flex align-items-center justify-content-center"
+    >
+      <div class="row">
+        <div class="col-12 align-self-center">
+          <h1 class="landing_heading">Karen Sniquer</h1>
+          <p class="landing_text">
+            Front-end web developer. Graphic designer. Who likes to make things.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 fixed-bottom pb-2 arrow">
+          <i class="fa fa-angle-double-down"></i>
+        </div>
+      </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about container-fluid">
       <div class="row align-items-center">
         <div class="col-12 col-lg-5 text-center">
-        <img
-          class="about-pic img-fluid rounded-circle"
-          src="./images/Karen-Sniquer-Headshot-2.jpg"
-          alt="Karen Sniquer professional headshot"
-        />
-      </div>
+          <img
+            class="about-pic img-fluid rounded-circle"
+            src="./images/Karen-Sniquer-Headshot-2.jpg"
+            alt="Karen Sniquer professional headshot"
+          />
+        </div>
         <div class="col-12 col-lg-6">
           <h1 class="about-heading">Hi, my name is Karen.</h1>
           <p class="about-text">
             I’m a front-end developer based in Durham, NC. I have a background
-            in fine arts & graphic design. I am currently finishing a degree in front-end
-            web development at Wake Technical Community College in May 2021.
+            in fine arts & graphic design. I am currently finishing a degree in
+            front-end web development at Wake Technical Community College in May
+            2021.
           </p>
-          <p class="about-text">
-            Let's get to know each other!
-          </p>
+          <p class="about-text">Let's get to know each other!</p>
         </div>
       </div>
     </section>
@@ -90,108 +130,119 @@
 
     <!-- Projects Section -->
     <section class="projects">
-
-    <!-- Left Project Block -->
-    <div class="project-block">
-      <div class="row w-100 align-items-center">
-        <div class="project-pic col-lg-6">
-          <a
-            href="https://wcet3.waketech.edu/ksniquer/WEB125/Lesson13/"
-            target="_blank">
-          <img
-            class="img-fluid"
-            src="./images/Biltmore.jpg"
-            alt="Fake Biltmore Estate website"
-          />
-          </a>
-        </div>
-
-        <div class="col-lg-6 text-center">
-          <div class="project-desc">
-            <h2>Biltmore Companion Site</h2>
-            <p class="pt-4">
-              In this project, we were to create a fictional companion website for
-              the Biltmore Estate visitors. I created a series of webpages for the
-              estate winery, where visitors could access a menu of wines and place
-              orders to go while at the winery. The website is meant to naturally
-              blend in with the actual Biltmore Estate website, linking back to
-              the actual website.
-            </p>
+      <!-- Left Project Block -->
+      <div class="project-block">
+        <div class="row w-100 align-items-center">
+          <div class="col-lg-6 text-center col-lg-6">
             <a
               href="https://wcet3.waketech.edu/ksniquer/WEB125/Lesson13/"
               target="_blank"
-              class="see-more">See More</a>
+            >
+              <img
+                class="img-fluid"
+                src="./images/Biltmore-Design.jpg"
+                alt="Fake Biltmore Estate website"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <div class="project-desc">
+              <h2>Biltmore Companion Site</h2>
+              <p class="pt-4">
+                In this project, we were to create a fictional companion website
+                for the Biltmore Estate visitors. I created a series of webpages
+                for the estate winery, where visitors could access a menu of
+                wines and place orders to go while at the winery. The website is
+                meant to naturally blend in with the actual Biltmore Estate
+                website, linking back to the actual website.
+              </p>
+              <a
+                href="https://wcet3.waketech.edu/ksniquer/WEB125/Lesson13/"
+                target="_blank"
+                class="see-more"
+                >See More</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End of project block -->
+      <!-- End of project block -->
 
-    <!-- Right Project Block -->
-    <div class="project-block">
-      <div class="row w-100 align-items-center">
-        <div class="project-right col-lg-6 order-last">
-          <a
-              href="https://wcet3.waketech.edu/ksniquer/WEB125/StokesCounty/index.html"
-              target="_blank">
-          <img
-            class="img-fluid project-pic"
-            src="./images/Stokes-County.jpg"
-            alt="Mock up of Stokes County Website Re-Design"
-          />
-          </a>
-        </div>
-
-        <div class="col-lg-6 text-center">
-          <div class="project-desc">
-            <h2>Stokes County Website Re-Design</h2>
-            <p class="pt-4">
-              For this project, I developed a responsive website for Stokes County
-               with 8 functional web pages.  I designed a concise, efficient nagivation 
-               architecture to showcase the departments, organizations, and services that
-               the county has to offer.  The website was designed using HTML5, CSS3/Bootstrap, and JS.
-            </p>
+      <!-- Right Project Block -->
+      <div class="project-block">
+        <div class="row w-100 align-items-center">
+          <div class="project-right col-lg-6 text-center order-last">
             <a
-              href="https://wcet3.waketech.edu/ksniquer/WEB125/StokesCounty/index.html" 
+              href="https://wcet3.waketech.edu/ksniquer/WEB125/StokesCounty/index.html"
               target="_blank"
-              class="see-more">See More</a>
+            >
+              <img
+                class="img-fluid"
+                src="./images/Stokes-Design.jpg"
+                alt="Mock up of Stokes County Website Re-Design"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <div class="project-desc">
+              <h2>Stokes County Website Re-Design</h2>
+              <p class="pt-4">
+                For this project, I developed a responsive website for Stokes
+                County with 8 functional web pages. I designed a concise,
+                efficient navigation architecture to showcase the departments,
+                organizations, and services that the county has to offer. The
+                website was designed using HTML5, CSS3/Bootstrap, and JS.
+              </p>
+              <a
+                href="https://wcet3.waketech.edu/ksniquer/WEB125/StokesCounty/index.html"
+                target="_blank"
+                class="see-more"
+                >See More</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End of project block -->
+      <!-- End of project block -->
 
-        <!-- Left Project Block -->
-        <div class="project-block">
-          <div class="row w-100 align-items-center">
-            <div class="col-lg-6">
+      <!-- Left Project Block -->
+      <div class="project-block">
+        <div class="row w-100 align-items-center">
+          <div class="col-lg-6 text-center">
+            <a
+              href="https://wcet3.waketech.edu/ksniquer/WEB250mos/"
+              target="_blank"
+              class="see-more"
+            >
+              <img
+                class="img-fluid"
+                src="./images/UX-Design.jpg"
+                alt="Mock up of UX Design Wordpress Blog"
+              />
+            </a>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="project-desc">
+              <h2>UX in Mind Wordpress Blog</h2>
+              <p class="pt-4">
+                In this project, I created a fictional WordPress blog for a UX
+                Design blog. With the use of widgets, plugins, and custom CSS, I
+                was able to create a fully-functional blog website with a
+                responsive design.
+              </p>
               <a
                 href="https://wcet3.waketech.edu/ksniquer/WEB250mos/"
                 target="_blank"
-                class="see-more">
-              <img
-                class="img-fluid project-pic"
-                src="./images/UX-inMind.jpg"
-                alt="Mock up of UX Design Wordpress Blog"
-              />
-              </a>
-            </div>
-            <div class="col-lg-6 text-center">
-              <div class="project-desc">
-                <h2>UX in Mind Wordpress Blog</h2>
-                <p class="pt-4">
-                  In this project, I created a fictional WordPress blog for a UX Design blog.  With the use of widgets, plugins, and custom CSS, I was able to create a fully-functional blog website with a responsive design.
-                </p>
-                <a
-                href="https://wcet3.waketech.edu/ksniquer/WEB250mos/"
-                target="_blank"
-                class="see-more">See More</a>
-              </div>
+                class="see-more"
+                >See More</a
+              >
             </div>
           </div>
         </div>
-        <!-- End of project block -->
-
+      </div>
+      <!-- End of project block -->
     </section>
     <!-- Section Header -->
 
@@ -202,84 +253,96 @@
 
     <!-- Resume Experience Section -->
     <section class="resume-experience">
-        <!-- Employment block - Copy & paste to add more employment information -->
-        <div class="employment-exp row">
-          <div class="job col-12 col-lg-6">
-            <ul class="job-title-date">
-              <li class="title">Production Assistant</li>
-              <li class="location">C.N. Clark Company</li>
-              <li class="dates">January 2018 - Present</li>
-            </ul>
-          </div>
-          <div class="job-description col-12 col-lg-6">
-            <ul>
-              <li>
-                Managing the production schedule for two employees by communicating with customers,
-                processing orders, and organizing daily tasks and print jobs.
-              </li>
-              <li>
-                Strengthening production timeliness and minimized errors by revising job checklist.
-              </li>
-            </ul>
-          </div>
-      </div>
-      <!-- End of employment block -->
-
-        <!-- Employment block - Copy & paste to add more employment information -->
-        <div class="employment-exp row">
-          <div class="job col-12 col-lg-6">
-            <ul class="job-title-date">
-              <li class="title">Graphic Designer</li>
-              <li class="location">WebRealSimple</li>
-              <li class="dates">February 2017 - Present</li>
-            </ul>
-          </div>
-          <div class="job-description col-12 col-lg-6">
-            <ul>
-              <li>
-                Increased revenue significantly in 2020 by developing promotional calendars and campaigns.
-              </li>
-              <li>
-                Conceptualizing design drafts and creating website banners, email designs and social media posts for clients.
-              </li>
-            </ul>
-          </div>
+      <!-- Employment block - Copy & paste to add more employment information -->
+      <div class="employment-exp row">
+        <div class="job col-12 col-lg-6">
+          <ul class="job-title-date">
+            <li class="title">Production Assistant</li>
+            <li class="location">C.N. Clark Company</li>
+            <li class="dates">January 2018 - Present</li>
+          </ul>
+        </div>
+        <div class="job-description col-12 col-lg-6">
+          <ul>
+            <li>
+              Managing the production schedule for two employees by
+              communicating with customers, processing orders, and organizing
+              daily tasks and print jobs.
+            </li>
+            <li>
+              Strengthening production timeliness and minimized errors by
+              revising job checklist.
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- End of employment block -->
 
       <!-- Employment block - Copy & paste to add more employment information -->
-        <div class="employment-exp row">
-          <div class="job col-12 col-lg-6">
-            <ul class="job-title-date">
-              <li class="title">Library Assistant</li>
-              <li class="location">The University of North Carolina at Chapel Hill</li>
-              <li class="dates">May 2017 - January 2018</li>
-            </ul>
-          </div>
-          <div class="job-description col-12 col-lg-6">
-            <ul>
-              <li>
-                Supervising student library employees, by answering questions about library procedures and assigning daily/weekly tasks.
-              </li>
-              <li>
-                Entering and processing ILL loans. Entering new library books and materials.
-              </li>
-              <li>
-                Overseeing front desk procedures, such as checking in/out library materials, answering general questions in person, via phone and online chat.
-              </li>
-              <li>
-                Assisting in university website accessibility project, by assuring that all online content had appropriate alt tags, structures, color contrasts, and video subtitles.
-              </li>
-            </ul>
-          </div>
+      <div class="employment-exp row">
+        <div class="job col-12 col-lg-6">
+          <ul class="job-title-date">
+            <li class="title">Graphic Designer</li>
+            <li class="location">WebRealSimple</li>
+            <li class="dates">February 2017 - Present</li>
+          </ul>
+        </div>
+        <div class="job-description col-12 col-lg-6">
+          <ul>
+            <li>
+              Increased revenue significantly in 2020 by developing promotional
+              calendars and campaigns.
+            </li>
+            <li>
+              Conceptualizing design drafts and creating website banners, email
+              designs and social media posts for clients.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End of employment block -->
+
+      <!-- Employment block - Copy & paste to add more employment information -->
+      <div class="employment-exp row">
+        <div class="job col-12 col-lg-6">
+          <ul class="job-title-date">
+            <li class="title">Library Assistant</li>
+            <li class="location">
+              The University of North Carolina at Chapel Hill
+            </li>
+            <li class="dates">May 2017 - January 2018</li>
+          </ul>
+        </div>
+        <div class="job-description col-12 col-lg-6">
+          <ul>
+            <li>
+              Supervising student library employees, by answering questions
+              about library procedures and assigning daily/weekly tasks.
+            </li>
+            <li>
+              Entering and processing ILL loans. Entering new library books and
+              materials.
+            </li>
+            <li>
+              Overseeing front desk procedures, such as checking in/out library
+              materials, answering general questions in person, via phone and
+              online chat.
+            </li>
+            <li>
+              Assisting in university website accessibility project, by assuring
+              that all online content had appropriate alt tags, structures,
+              color contrasts, and video subtitles.
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- End of employment block -->
     </section>
 
-      <!-- Education Section Header -->
-      <div id="education" class="header-container">
-        <h1 class="header"><span>Education</span></h1>
-      </div>
+    <!-- Education Section Header -->
+    <div id="education" class="header-container">
+      <h1 class="header"><span>Education</span></h1>
+    </div>
 
     <!-- Education Section -->
     <section class="education">
@@ -291,51 +354,80 @@
             <li class="job-dates">June 2019 - May 2021</li>
           </ul>
           <p>
-            The degree focuses on front-end web development, using HTML, CSS, and several programming languages, such as PHP, C#, and JavaScript.  It covers the fundamentals of algorithms, programming, web mark-up, databases, and SEO marketing.  I studied several programming frameworks, including ASP.NET, React, Vue, and Angular, as well as the popular CMS WordPress & Joomla!.
+            The degree focuses on front-end web development, using HTML, CSS,
+            and several programming languages, such as PHP, C#, and JavaScript.
+            It covers the fundamentals of algorithms, programming, web mark-up,
+            databases, and SEO marketing. I studied several programming
+            frameworks, including ASP.NET, React, Vue, and Angular, as well as
+            the popular CMS WordPress & Joomla!.
           </p>
         </div>
         <div class="education-block col-12 col-lg-6">
           <ul class="job-title-date">
             <li class="title">Bachelor of Fine Arts</li>
-            <li class="location">The University of North Carolina at Greensboro</li>
+            <li class="location">
+              The University of North Carolina at Greensboro
+            </li>
             <li class="dates">August 2010 - May 2014</li>
           </ul>
           <p>
-            I received my BFA in Printmaking & Drawing.  The degree focused on hands-on printmaking, such as limestone lithography, metal etching, woodblock printing, and the like.  I also studied drawing and painting, as well as extensive art history classes.
+            I received my BFA in Printmaking & Drawing. The degree focused on
+            hands-on printmaking, such as limestone lithography, metal etching,
+            woodblock printing, and the like. I also studied drawing and
+            painting, as well as extensive art history classes.
           </p>
         </div>
       </div>
-</section>
+    </section>
 
-  <!-- Contact Information Section -->
-  <section id="contact" class="contact container-fluid text-center">
-    <div class="row align-items-center">
-      <div class="contact-heading col-12">
-        <p>Hello there!</p>
-        <p>I'm currently available for project collaborations, freelance projects, or full-time employment.  Let's get in touch!</p>
+    <!-- Contact Information Section -->
+    <section id="contact" class="contact container-fluid text-center">
+      <div class="row align-items-center">
+        <div class="contact-heading col-12">
+          <p>Hello there!</p>
+          <p>
+            I'm currently available for project collaborations, freelance
+            projects, or full-time employment. Let's get in touch!
+          </p>
+        </div>
+        <!-- <div class="w-100 d-none d-lg-block"></div> -->
+        <div class="col-12">
+          <ul class="contact-information">
+            <li>
+              <a href="mailto:kbsniquer@gmail.com"
+                ><i class="far fa-envelope"></i> Email</a
+              >
+            </li>
+            <li>
+              <a href="tel:+17044380447"><i class="fas fa-phone"></i> Phone</a>
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/kbsniquer" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/karen-sniquer"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://karensniquer.wordpress.com/" target="_blank"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- <div class="w-100 d-none d-lg-block"></div> -->
-      <div class="col-12">
-        <ul class="contact-information">
-          <li><a href="mailto:kbsniquer@gmail.com"><i class="far fa-envelope"></i> Email</a></li>
-          <li><a href="tel:+17044380447"><i class="fas fa-phone"></i> Phone</a></li>
-        </ul>
-        <ul class="social-links">
-          <li><a href="https://github.com/kbsniquer" target="_blank">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/karen-sniquer" target="_blank">LinkedIn</a></li>
-          <li><a href="https://karensniquer.wordpress.com/" target="_blank">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="row align-items-center">
-          <p class="text-center col-12 pb-3">
-            &copy; 2021 Karen Sniquer
-          </p>
+          <p class="text-center col-12 pb-3">&copy; 2021 Karen Sniquer</p>
         </div>
       </div>
     </footer>

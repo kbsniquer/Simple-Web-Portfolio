@@ -76,9 +76,13 @@ footer p {
 
 /* --------------------------- */
 
+/* Landing section */
+
 .landing {
   padding: 0;
   background-color: #212529;
+  background-image: url(./images/bkg.svg);
+  background-attachment: fixed;
 }
 
 .landing_heading,
@@ -129,7 +133,7 @@ footer p {
 }
 
 .about {
-  background-color: #3a3738;
+  background-color: #323759;
 }
 
 .about-pic {

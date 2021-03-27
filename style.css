@@ -323,8 +323,8 @@ footer p {
 
 @media only screen and (max-width: 995px) {
   .about-pic {
-    width: 50%;
-    padding-bottom: 1rem;
+    width: 65%;
+    padding-bottom: 2rem;
   }
 
   .project-right {

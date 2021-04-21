@@ -49,6 +49,14 @@ footer p {
   margin-bottom: 0;
 }
 
+section div,
+.contact div,
+.education div,
+.resume-experience div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Navigation bar */
 
 .nav-item a:hover {
@@ -150,6 +158,18 @@ footer p {
   color: white;
   line-height: 1.7em;
   font-size: 1rem;
+}
+
+.resume-link a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px white;
+}
+
+.resume-link:hover {
+  color: white;
+  padding-bottom: 0.25rem;
+  transition: 0.25s ease;
 }
 
 /* --------------------------- */
@@ -317,7 +337,7 @@ footer p {
 
 @media screen and (min-width: 1400px) {
   .about-pic {
-    width: 50%;
+    width: 75%;
   }
 }
 

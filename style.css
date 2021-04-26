@@ -57,6 +57,10 @@ section div,
   margin: 0 auto;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Navigation bar */
 
 .nav-item a:hover {
@@ -160,16 +164,19 @@ section div,
   font-size: 1rem;
 }
 
+.resume-link {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .resume-link a {
   color: white;
   text-decoration: none;
   border-bottom: 1px white;
-}
-
-.resume-link:hover {
-  color: white;
-  padding-bottom: 0.25rem;
-  transition: 0.25s ease;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 1rem;
+  margin-right: 1rem;
 }
 
 /* --------------------------- */
@@ -295,6 +302,11 @@ section div,
   text-decoration: none;
 }
 
+.contact-information a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
 .social-links li {
   font-size: 14pt;
   text-transform: uppercase;
@@ -417,6 +429,18 @@ section div,
 
   .about-heading {
     font-size: 19pt;
+  }
+
+  .resume-link a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    display: block;
   }
 
   .contact {
